@@ -1,0 +1,18 @@
+body {
+    padding-top: 60px;
+}
+
+section {
+}
+
+section {
+    overflow: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.center h1 {
+    margin-bottom: 10px;
+}
