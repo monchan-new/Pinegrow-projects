@@ -89,71 +89,10 @@
                             <a href="/users/show/following.html"><strong class="stat" id="following">49</strong>following</a>
                             <a href="/users/show/followers.html"><strong class="stat" id="followers">38</strong>followers</a>
                         </section>
-                        <section class="micropost_form">
-                            <form method="post" action="#">
-                                <div class="field">
-                                    <textarea id="micropost_content" name="micropost[content]" placeholder="Compose new micropost..." required="true"></textarea>
-                                </div>
-                                <span class="image"><input type="file" name="micropost[image]" id="micropost_image" accept="image/jpeg, image/gif,  image/png"></span>
-                                <input type="submit" name="commit" value="Post" class="btn btn-primary" data-disable-with="Post">
-                            </form>
-                        </section>
+                        <section data-empty-placeholder class="micropost_form"></section>
                     </aside>
                     <div class="col-md-8">
                         <h3>Micropost Feed</h3>
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li class="disabled page-item">
-                                    <a href="#" class="page-link" tabindex="-1">&larr; Previous</a>
-                                </li>
-                                <li class="active page-item">
-                                    <a href="#" class="page-link">1</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">3</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">4</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">5</a>
-                                </li>
-                                <li class="page-item">
-                                    <a href="#" class="page-link">next→</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <ol class="microposts">
-                            <li><a href="/users/show.html" class=""><img src="https://secure.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d?s=80" alt="Example User" class="gravatar"></a><span class="user"><a href="/users/show.html" class="">Example User</a></span><span class="content">Qui veniam assumenda eum libero.<img src="https://railstutorial.jp/images/kitten.png" height="300px"></span><span class="timestamp">Posted 6 days ago.&nbsp;<a href="#">delete</a></span>
-                            </li>
-                            <li><a href="/users/show.html" class=""><img src="https://secure.gravatar.com/avatar/b0e247198b823a9bd5908730477b2cc2?s=50" alt="Example User" class="gravatar"></a><span class="user"><a href="/users/show.html" class="">Msgr. Isreal Mante</a></span><span class="content">Qui veniam assumenda eum libero.</span><span class="timestamp">Posted 6 days ago.&nbsp;</span>
-                            </li>
-                            <li><a href="/users/show.html" class=""><img src="https://secure.gravatar.com/avatar/4788f8d222055ddd54d12b75514cd8c3?s=50" alt="Example User" class="gravatar"></a><span class="user"><a href="/users/show.html" class="">Wilburn Nikolaus MD</a></span><span class="content">Qui veniam assumenda eum libero.</span><span class="timestamp">Posted 6 days ago.&nbsp;</span>
-                            </li>
-                            <li><a href="/users/show.html" class=""><img src="https://secure.gravatar.com/avatar/2065436fdfe2d27dc7f06b6787a4a1af?s=50" alt="Example User" class="gravatar"></a><span class="user"><a href="/users/show.html" class="">Newton Walter</a></span><span class="content">Qui veniam assumenda eum libero.</span><span class="timestamp">Posted 6 days ago.&nbsp;</span>
-                            </li>
-                            <li><a href="/users/show.html" class=""><img src="https://secure.gravatar.com/avatar/03037e249b97891693d6e292289be0ff?s=50" alt="Example User" class="gravatar"></a><span class="user"><a href="/users/show.html" class="">Elbert Watsica II</a></span><span class="content">Qui veniam assumenda eum libero.</span><span class="timestamp">Posted 6 days ago.&nbsp;</span>
-                            </li>
-                        </ol>
-                        <ul class="pagination">
-                            <li class="disabled page-item"><a href="#" class="page-link" tabindex="-1">&larr; Previous</a>
-                            </li>
-                            <li class="active page-item"><a href="#" class="page-link">1</a>
-                            </li>
-                            <li class="page-item"><a href="#" class="page-link">2</a>
-                            </li>
-                            <li class="page-item"><a href="#" class="page-link">3</a>
-                            </li>
-                            <li class="page-item"><a href="#" class="page-link">4</a>
-                            </li>
-                            <li class="page-item"><a href="#" class="page-link">5</a>
-                            </li>
-                            <li class="page-item"><a href="#" class="page-link">next→</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

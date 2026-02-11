@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-pgc-set-master>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Help | Ruby on Rails Tutorial Sample App</title>
+        <title>Blank Template for Bootstrap</title>
         <!-- Bootstrap core CSS -->
         <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
         <!-- Custom styles for this template -->
         <link href="/css/style.css" rel="stylesheet">
     </head>
-    <body>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <header class="fixed-top" data-pgc-save-partial="/shared/_guest_header.html" id="GuestHeader" data-pgc="guest.header">
+    <body data-logged-in="true">
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <header class="fixed-top" data-pgc-define="guest.header" data-pgc-define-name="GuestHeader" data-pgc-define-description="header for guests" data-pgc-save-partial="/shared/_guest_header.html" id="GuestHeader">
             <nav class="bg-dark navbar navbar-dark navbar-expand-md" data-bs-theme="light">
                 <div class="container-fluid">
                     <a href="/static_pages/home.html" id="logo" class="navbar-brand text-decoration-none">sample app</a>
@@ -38,7 +38,7 @@
                 </div>
             </nav>
         </header>
-        <header class="fixed-top" data-pgc-save-partial="/shared/_user_header.html" id="UserHeader" data-pgc="user.header">
+        <header class="fixed-top" data-pgc-define="user.header" data-pgc-define-description="header for users" data-pgc-save-partial="/shared/_user_header.html" data-pgc-define-name="UserHeader" id="UserHeader">
             <nav class="bg-dark navbar navbar-dark navbar-expand-md" data-bs-theme="light">
                 <div class="container-fluid"><a href="/static_pages/home.html" id="logo" class="navbar-brand text-decoration-none">sample app</a>
                     <button id="hamburger" class="navbar-toggler" type="button">
@@ -75,11 +75,7 @@
             </nav>
         </header>
         <div class="container">
-            <h1>Help</h1>
-            <p>
-                Get help on the Ruby on Rails Tutorial at the <a href="https://railstutorial.jp/help">Rails Tutorial help page</a>.
-                To get help on this sample app, see the <a href="https://railstutorial.jp/#ebook"><em>Ruby on Rails Tutorial</em> book</a>. </p>
-            <footer data-pgc-save-partial="/shared/_footer.html" data-pgc="global.footer">
+            <footer data-pgc-define="global.footer" data-pgc-define-name="GlobalFooter" data-pgc-define-description="common footer" data-pgc-save-partial="/shared/_footer.html">
                 <small>The <a href="https://railstutorial.jp/" class="text-decoration-none">Ruby on Rails Tutorial</a> by <a href="https://www.michaelhartl.com/" class="text-decoration-none">Michael Hartl</a></small>
                 <nav>
                     <ul>
@@ -95,8 +91,8 @@
                     </ul>
                 </nav>
             </footer>
-            <script src="/javascript/navbar.js" data-pgc-save-partial="/shared/_navbar_js.html" data-pgc="navbar.js"></script>
-            <script src="/javascript/login.js" data-pgc-save-partial="/shared/_login_js.html" data-pgc="login.js"></script>
         </div>
+        <script src="/javascript/navbar.js" data-pgc-define="navbar.js" data-pgc-define-description="Javascript for Navbar" data-pgc-save-partial="/shared/_navbar_js.html" data-pgc-define-name="NavbarJS"></script>
+        <script src="/javascript/login.js" data-pgc-define="login.js" data-pgc-define-description="Javascript for Login" data-pgc-save-partial="/shared/_login_js.html" data-pgc-define-name="LoginJS"></script>
     </body>
 </html>
