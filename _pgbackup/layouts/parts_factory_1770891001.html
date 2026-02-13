@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-pgc-set-master>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this template -->
+        <link href="/css/style.css" rel="stylesheet">
+    </head>
+    <body data-logged-in="true">
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <header class="fixed-top" data-pgc-define="guest.header" data-pgc-define-name="GuestHeader" data-pgc-define-description="header for guests" data-pgc-save-partial="/shared/_guest_header.html" id="GuestHeader">
+            <nav class="bg-dark navbar navbar-dark navbar-expand-md" data-bs-theme="light">
+                <div class="container-fluid"><a href="/static_pages/home.html" id="logo" class="navbar-brand text-decoration-none">sample app</a>
+                    <button id="hamburger" class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbar-menu" class="collapse navbar-collapse">
+                        <ul class="ms-auto navbar-nav">
+                            <li class="nav-item"><a href="/static_pages/home.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item"><a href="/static_pages/help.html" class="nav-link">Help</a>
+                            </li>
+                            <li class="nav-item"><a href="/sessions/new.html" class="nav-link">Log in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header class="fixed-top" data-pgc-define="user.header" data-pgc-define-description="header for users" data-pgc-save-partial="/shared/_user_header.html" data-pgc-define-name="UserHeader" id="UserHeader">
+            <nav class="bg-dark navbar navbar-dark navbar-expand-md" data-bs-theme="light">
+                <div class="container-fluid">
+                    <a href="/static_pages/home.html" id="logo" class="navbar-brand text-decoration-none">sample app</a>
+                    <button id="hamburger" class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbar-menu" class="collapse navbar-collapse">
+                        <ul class="ms-auto navbar-nav">
+                            <li class="nav-item"><a href="/static_pages/home.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item"><a href="/static_pages/help.html" class="nav-link">Help</a>
+                            </li>
+                            <li class="nav-item"><a href="/users/index.html" class="nav-link">Users</a>
+                            </li>
+                            <li class="dropdown nav-item"><a href="#" class="dropdown-toggle nav-link" id="account" data-bs-toggle="dropdown">Account</a>
+                                <ul id="dropdown-menu" class="dropdown-menu">
+                                    <li>
+                                        <a href="/users/show.html" class="dropdown-item">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="/users/edit.html" class="dropdown-item">Settings</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li>
+                                        <a href="/static_pages/home.html" class="dropdown-item logout-btn">Log out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div id="GuestHome" data-pgc-define="guest.home" data-pgc-define-name="GuestHome" data-pgc-define-description="Home page for guests" data-pgc-save-partial="/shared/_guest_home.html">
+                <div class="bg-light center p-5 rounded">
+                    <h1>Welcome to the Sample App</h1>
+                    <h2>This is the home page for the <a href="https://rubyonrails.org/">Ruby on Rails Tutorial</a> sample application.</h2><a href="/users/new.html" class="btn btn-lg btn-primary">Sign up now!</a>
+                </div>
+                <a href="https://rubyonrails.org/"><img src="../images/rails.svg" alt="Rails logo" width="200"></a>
+            </div>
+            <div id="UserHome" data-pgc-define="user.home" data-pgc-define-name="UserHome" data-pgc-define-description="home page for the user" data-pgc-save-partial="/shared/_user_home.html">
+                <div class="row">
+                    <aside class="col-md-4">
+                        <section class="user_info" data-pgc-define="user_info" data-pgc-define-name="UserInfo" data-pgc-define-description="user information partial" data-pgc-save-partial="/shared/_user_info.html" data-pgc-edit="edit_user_info"><a href="/users/show.html" data-pgc-edit="edit_link[href]"><img src="	https://secure.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d?s=80" alt="Example User" class="gravatar" data-pgc-edit="edit_image[alt, src]"></a>
+                            <h1 data-pgc-edit="edit_h1">Example User</h1>
+                            <div data-pgc-edit="edit_view_my_profile"><span><a href="/users/show.html">view my profile</a></span>
+                            </div>
+                            <div data-pgc-edit="edit_micropost_count"><span>50 microposts</span>
+                            </div>
+                        </section>
+                        <section class="stats" data-pgc-define="stats" data-pgc-define-name="Stats" data-pgc-define-description="stats partial" data-pgc-save-partial="/shared/_stats.html">
+                            <a href="/users/show_following.html" data-pgc-edit="edit_following_link[href]"><strong class="stat" id="following" data-pgc-edit="edit_following_count">49</strong>following</a>
+                            <a href="/users/show_followers.html" data-pgc-edit="edit_followers_link[href]"><strong class="stat" id="followers" data-pgc-edit="edit_followers_count">38</strong>followers</a>
+                        </section>
+                        <section class="micropost_form">
+                            <form method="post" action="#">
+                                <div class="field">
+                                    <textarea id="micropost_content" name="micropost[content]" placeholder="Compose new micropost..." required="true"></textarea>
+                                </div>
+                                <span class="image"><input type="file" name="micropost[image]" id="micropost_image" accept="image/jpeg, image/gif,  image/png"></span>
+                                <input type="submit" name="commit" value="Post" class="btn btn-primary" data-disable-with="Post">
+                            </form>
+                        </section>
+                    </aside>
+                    <div class="col-md-8">
+                        <h3>Micropost Feed</h3>
+                        <nav aria-label="Page navigation" data-pgc-define="pagination" data-pgc-define-name="Pagination" data-pgc-define-description="pagination partial" data-pgc-save-partial="/shared/_pagination.html" class="pagination">
+                            <ul class="pagination">
+                                <li class="disabled page-item">
+                                    <a href="#" class="page-link" tabindex="-1">&larr; Previous</a>
+                                </li>
+                                <li class="active page-item">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">Next→</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ol class="microposts">
+                            <li data-pgc-define="micropost" data-pgc-define-name="Micropost" data-pgc-define-description="editable micropost" data-pgc-save-partial="/shared/_micropost"><span data-pgc-edit="edit_gravatar"><a href="/users/show.html" class=""><img src="https://secure.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d?s=80" alt="Example User" class="gravatar"></a></span><span class="user"><a href="/users/show.html" class="" data-pgc-edit="edit_user[href]">Example User</a></span><span class="content" data-pgc-edit="edit_content">Qui veniam assumenda eum libero.<img src="https://railstutorial.jp/images/kitten.png" height="300px" data-pgc-edit="edit_image[src, height, no_content]"></span><span class="timestamp" data-pgc-edit="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-edit="edit_delete">delete</a></span>
+                            </li>
+                            <li data-pgc-save-partial="/shared/_micropost" data-pgc="micropost">
+                                <span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class="" data-pgc-define=""><img src="https://secure.gravatar.com/avatar/b0e247198b823a9bd5908730477b2cc2?s=50" alt="Example User" class="gravatar"></a></span>
+                                <span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Msgr. Isreal Mante</a></span>
+                                <span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img src height="0" data-pgc-field="edit_image"></span>
+                                <span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                            </li>
+                            <li data-pgc-save-partial="/shared/_micropost" data-pgc="micropost">
+                                <span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class=""><img src="https://secure.gravatar.com/avatar/4788f8d222055ddd54d12b75514cd8c3?s=50" alt="Example User" class="gravatar"></a></span>
+                                <span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Wilburn Nikolaus MD</a></span>
+                                <span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img height="0" data-pgc-field="edit_image" src></span>
+                                <span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                            </li>
+                            <li data-pgc-save-partial="/shared/_micropost" data-pgc="micropost">
+                                <span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class=""><img src="https://secure.gravatar.com/avatar/2065436fdfe2d27dc7f06b6787a4a1af?s=50" alt="Example User" class="gravatar"></a></span>
+                                <span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Newton Walter</a></span>
+                                <span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img height="0" data-pgc-field="edit_image" src></span>
+                                <span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                            </li>
+                            <li data-pgc-save-partial="/shared/_micropost" data-pgc="micropost">
+                                <span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class=""><img src="https://secure.gravatar.com/avatar/03037e249b97891693d6e292289be0ff?s=50" alt="Example User" class="gravatar"></a></span>
+                                <span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Elbert Watsica II</a></span>
+                                <span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img height="0" data-pgc-field="edit_image" src></span>
+                                <span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                            </li>
+                        </ol>
+                        <nav aria-label="Page navigation" data-pgc-save-partial="/shared/_pagination.html" class="pagination" data-pgc="pagination">
+                            <ul class="pagination">
+                                <li class="disabled page-item"><a href="#" class="page-link" tabindex="-1">&larr; Previous</a>
+                                </li>
+                                <li class="active page-item"><a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item"><a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-item"><a href="#" class="page-link">3</a>
+                                </li>
+                                <li class="page-item"><a href="#" class="page-link">4</a>
+                                </li>
+                                <li class="page-item"><a href="#" class="page-link">5</a>
+                                </li>
+                                <li class="page-item"><a href="#" class="page-link">Next→</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div data-pgc-define="user" data-pgc-define-name="User" data-pgc-define-description="user summary partial" data-pgc-save-partial="/shared/_user.html" data-pgc-edit="edit_div">
+                        <li data-pgc-edit="edit_user">
+                            <img src="https://secure.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d?s=50" class="gravatar" alt="Example User" data-pgc-edit="edit_gravatar[alt, src]">
+                            <a href="/users/show.html" class="" data-pgc-edit="edit_user[href]">Example User</a>
+                            <span class="" data-pgc-edit="edit_vertical_bar"> | </span>
+                            <a href="#" data-pgc-edit="edit_delete">delete</a>
+                        </li>
+                    </div>
+                    <form method="get" action="/users/show.html" accept-charset="UTF-8" data-pgc-define="form" data-pgc-save-partial="/shared/_form.html" data-pgc-define-name="Form" data-pgc-define-description="standart form partial">
+                        <label for="user_name">Name</label>
+                        <input name="user[name]" id="user_name" type="text" class="form-control">
+                        <label for="user_email">Email</label>
+                        <input name="user[email]" id="user_email" type="email" class="form-control">
+                        <label for="user_password">Password</label>
+                        <input name="user[password]" id="user_password" type="password" class="form-control">
+                        <label for="user_password_confirmation">Password confirmation</label>
+                        <input name="user[password_confirmation]" id="user_password_confirmation" type="password" class="form-control">
+                        <input name="commit" type="submit" value="Create my account" data-disable-with="Create my account" class="btn btn-primary signin-btn" data-pgc-edit="edit_button[value, no_content]">
+                    </form>
+                </div>
+            </div>
+            <footer data-pgc-define="global.footer" data-pgc-define-name="GlobalFooter" data-pgc-define-description="common footer" data-pgc-save-partial="/shared/_footer.html"><small>The <a href="https://railstutorial.jp/" class="text-decoration-none">Ruby on Rails Tutorial</a> by <a href="https://www.michaelhartl.com/" class="text-decoration-none">Michael Hartl</a></small>
+                <nav>
+                    <ul>
+                        <li><a href="/static_pages/about.html" class="text-decoration-none">About</a>
+                        </li>
+                        <li><a href="/static_pages/contact.html" class="text-decoration-none">Contact</a>
+                        </li>
+                        <li><a href="https://news.railstutorial.org/" class="text-decoration-none">News</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+        <script src="/javascript/navbar.js" data-pgc-define="navbar.js" data-pgc-define-description="Javascript for Navbar" data-pgc-save-partial="/shared/_navbar_js.html" data-pgc-define-name="NavbarJS"></script>
+        <script src="/javascript/login.js" data-pgc-define="login.js" data-pgc-define-description="Javascript for Login" data-pgc-save-partial="/shared/_login_js.html" data-pgc-define-name="LoginJS"></script>
+        <script src="/javascript/follow.js" data-pgc-define="follow.js" data-pgc-define-name="FollowJS" data-pgc-define-description="Javascript for follow" data-pgc-save-partial="/shared/_follow_js.html"></script>
+    </body>
+</html>
