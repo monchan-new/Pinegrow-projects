@@ -1,0 +1,91 @@
+<div id="UserHome" data-pgc="user.home">
+    <div class="row">
+        <aside class="col-md-4">
+            <section class="user_info" data-pg-collapsed data-pgc="user_info" data-pgc-field="edit_user_info"><a href="/users/show.html" data-pgc-field="edit_link"><img src="	https://secure.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d?s=80" alt="Example User" class="gravatar" data-pgc-field="edit_image"></a>
+                <h1 data-pgc-field="edit_h1">Example User</h1>
+                <div data-pgc-field="edit_view_my_profile"><span><a href="/users/show.html">view my profile</a></span>
+                </div>
+                <div data-pgc-field="edit_micropost_count"><span>50 microposts</span>
+                </div>
+            </section>
+            <section class="stats" data-pg-collapsed data-pgc="stats">
+                <a href="/users/show_following.html" data-pgc-field="edit_following_link"><strong class="stat" id="following" data-pgc-field="edit_following_count">49</strong>following</a>
+                <a href="/users/show_followers.html" data-pgc-field="edit_followers_link"><strong class="stat" id="followers" data-pgc-field="edit_followers_count">38</strong>followers</a>
+            </section>
+            <section class="micropost_form">
+                <form method="get" action="#" data-pgc="micropost.form">
+                    <div class="field">
+                        <textarea id="micropost_content" name="micropost[content]" placeholder="Compose new micropost..." required="true"></textarea>
+                    </div>
+                    <span class="image"><input type="file" name="micropost[image]" id="micropost_image" accept="image/jpeg, image/gif,  image/png"></span>
+                    <input type="submit" name="commit" value="Post" class="btn btn-primary" data-disable-with="Post">
+                </form>
+            </section>
+        </aside>
+        <div class="col-md-8">
+            <h3>Micropost Feed</h3>
+            <nav aria-label="Page navigation" class="pagination" data-pg-collapsed data-pgc="pagination">
+                <ul class="pagination">
+                    <li class="disabled page-item">
+                        <a href="#" class="page-link" tabindex="-1">&larr; Previous</a>
+                    </li>
+                    <li class="active page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next→</a>
+                    </li>
+                </ul>
+            </nav>
+            <ol class="microposts">
+                <li data-pg-collapsed data-pgc="micropost"><span data-pgc-field="edit_gravatar"><a href="/users/show.html" class=""><img src="https://secure.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d?s=80" alt="Example User" class="gravatar"></a></span><span class="user"><a href="/users/show.html" class="" data-pgc-field="edit_user">Example User</a></span><span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img src="https://railstutorial.jp/images/kitten.png" height="300px" data-pgc-field="edit_image"></span><span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete">delete</a></span>
+                </li>
+                <li data-pg-collapsed data-pgc="micropost"><span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class="" data-pgc-define=""><img src="https://secure.gravatar.com/avatar/b0e247198b823a9bd5908730477b2cc2?s=50" alt="Example User" class="gravatar"></a></span><span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Msgr. Isreal Mante</a></span><span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img src height="0" data-pgc-field="edit_image"></span><span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                </li>
+                <li data-pg-collapsed data-pgc="micropost"><span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class=""><img src="https://secure.gravatar.com/avatar/4788f8d222055ddd54d12b75514cd8c3?s=50" alt="Example User" class="gravatar"></a></span><span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Wilburn Nikolaus MD</a></span><span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img height="0" data-pgc-field="edit_image" src></span><span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                </li>
+                <li data-pg-collapsed data-pgc="micropost"><span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class=""><img src="https://secure.gravatar.com/avatar/2065436fdfe2d27dc7f06b6787a4a1af?s=50" alt="Example User" class="gravatar"></a></span><span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Newton Walter</a></span><span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img height="0" data-pgc-field="edit_image" src></span><span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                </li>
+                <li data-pg-collapsed data-pgc="micropost"><span data-pgc-field="edit_gravatar"><a href="/users/show_other.html" class=""><img src="https://secure.gravatar.com/avatar/03037e249b97891693d6e292289be0ff?s=50" alt="Example User" class="gravatar"></a></span><span class="user"><a href="/users/show_other.html" class="" data-pgc-field="edit_user">Elbert Watsica II</a></span><span class="content" data-pgc-field="edit_content">Qui veniam assumenda eum libero.<img height="0" data-pgc-field="edit_image" src></span><span class="timestamp" data-pgc-field="edit_timestamp">Posted 6 days ago.&nbsp;<a href="#" data-pgc-field="edit_delete"></a></span>
+                </li>
+            </ol>
+            <nav aria-label="Page navigation" class="pagination" data-pg-collapsed data-pgc="pagination">
+                <ul class="pagination">
+                    <li class="disabled page-item">
+                        <a href="#" class="page-link" tabindex="-1">&larr; Previous</a>
+                    </li>
+                    <li class="active page-item">
+                        <a href="#" class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a href="#" class="page-link">Next→</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
