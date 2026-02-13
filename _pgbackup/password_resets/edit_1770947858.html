@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Bootstrap core CSS -->
+        <!-- Custom styles for this template -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Sign up | Ruby on Rails Tutorial Sample App</title>
-        <!-- Bootstrap core CSS -->
+        <title>Reset password | Ruby on Rails Tutorial Sample App</title>
         <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
-        <!-- Custom styles for this template -->
         <link href="/css/style.css" rel="stylesheet">
     </head>
     <body>
         <script src="../assets/js/popper.min.js"></script>
         <script src="../bootstrap/js/bootstrap.min.js"></script>
-        <header class="fixed-top" data-pgc-save-partial="/shared/_user_header.html" id="UserHeader" data-pgc="user.header">
+        <header class="fixed-top" data-pgc-save-partial="C:\Users\monst\source\Rails projects\review\Pine Grow\shared\_user_header.html" id="UserHeader" data-pgc="user.header">
             <nav class="bg-dark navbar navbar-dark navbar-expand-md" data-bs-theme="light">
                 <div class="container-fluid">
                     <a href="/static_pages/home.html" id="logo" class="navbar-brand text-decoration-none">sample app</a>
@@ -27,7 +27,7 @@
                             </li>
                             <li class="nav-item"><a href="/static_pages/help.html" class="nav-link">Help</a>
                             </li>
-                            <li class="nav-item"><a href="#" class="nav-link">Users</a>
+                            <li class="nav-item"><a href="/users/index.html" class="nav-link">Users</a>
                             </li>
                             <li class="dropdown nav-item"><a href="#" class="dropdown-toggle nav-link" id="account" data-bs-toggle="dropdown">Account</a>
                                 <ul id="dropdown-menu" class="dropdown-menu">
@@ -35,7 +35,7 @@
                                         <a href="/users/show.html" class="dropdown-item">Profile</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="dropdown-item">Settings</a>
+                                        <a href="/users/edit.html" class="dropdown-item">Settings</a>
                                     </li>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -50,7 +50,7 @@
                 </div>
             </nav>
         </header>
-        <header class="fixed-top" data-pgc-save-partial="/shared/_guest_header.html" id="GuestHeader" data-pgc="guest.header">
+        <header class="fixed-top" data-pgc-save-partial="C:\Users\monst\source\Rails projects\review\Pine Grow\shared\_guest_header.html" id="GuestHeader" data-pgc="guest.header">
             <nav class="bg-dark navbar navbar-dark navbar-expand-md" data-bs-theme="light">
                 <div class="container-fluid"><a href="/static_pages/home.html" id="logo" class="navbar-brand text-decoration-none">sample app</a>
                     <button id="hamburger" class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span>
@@ -69,23 +69,19 @@
             </nav>
         </header>
         <div class="container">
-            <h1>Sign Up</h1>
+            <h1>Reset password</h1>
             <div class="row">
                 <div class="col-md-6 offset-md-3">
-                    <form method="get" action="/users/show.html" accept-charset="UTF-8">
-                        <label for="user_name">Name</label>
-                        <input name="user[name]" id="user_name" type="text" class="form-control">
-                        <label for="user_email">Email</label>
-                        <input name="user[email]" id="user_email" type="email" class="form-control">
-                        <label for="user_password">Password</label>
-                        <input name="user[password]" id="user_password" type="password" class="form-control">
-                        <label for="user_password_confirmation">Password confirmation</label>
-                        <input name="user[password_confirmation]" id="user_password_confirmation" type="password" class="form-control">
-                        <input name="commit" type="submit" value="Create my account" data-disable-with="Create my account" class="btn btn-primary">
+                    <form method="get" action="/users/show.html" accept-charset="UTF-8" class="password-btn">
+                        <label for="password">password</label>
+                        <input id="password" type="password" class="form-control">
+                        <label for="user_password_confirmation">password_confirmation</label>
+                        <input id="password_confirmation" type="password" class="form-control">
+                        <input name="commit" type="submit" value="Update password" data-disable-with="Submit" class="btn btn-primary">
                     </form>
                 </div>
             </div>
-            <footer data-pgc-save-partial="/shared/_footer.html" data-pgc="global.footer"><small>The <a href="https://railstutorial.jp/" class="text-decoration-none">Ruby on Rails Tutorial</a> by <a href="https://www.michaelhartl.com/" class="text-decoration-none">Michael Hartl</a></small>
+            <footer data-pgc-save-partial="C:\Users\monst\source\Rails projects\review\Pine Grow\shared\_footer.html" data-pgc="global.footer"><small>The <a href="https://railstutorial.jp/" class="text-decoration-none">Ruby on Rails Tutorial</a> by <a href="https://www.michaelhartl.com/" class="text-decoration-none">Michael Hartl</a></small>
                 <nav>
                     <ul>
                         <li><a href="/static_pages/about.html" class="text-decoration-none">About</a>
@@ -97,8 +93,8 @@
                     </ul>
                 </nav>
             </footer>
-            <script src="/javascript/navbar.js" data-pgc-save-partial="/shared/_navbar_js.html" data-pgc="navbar.js"></script>
-            <script src="/javascript/login.js" data-pgc-save-partial="/shared/_login_js.html" data-pgc="login.js"></script>
+            <script src="/javascript/navbar.js" data-pgc-save-partial="C:\Users\monst\source\Rails projects\review\Pine Grow\shared\_navbar_js.html" data-pgc="navbar.js"></script>
+            <script src="/javascript/login.js" data-pgc-save-partial="C:\Users\monst\source\Rails projects\review\Pine Grow\shared\_login_js.html" data-pgc="login.js"></script>
         </div>
     </body>
 </html>
